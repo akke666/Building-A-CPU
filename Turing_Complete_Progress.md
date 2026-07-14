@@ -22,3 +22,13 @@ My Thought Process:
 determining the mode, I use a two bit decoder.To apply the ALU to reg 1-3, I just simply connect the wire together. There was a problem I faced that is how to disable the move component when it is in other mode. There was a hint given says the 3-bit decoder has a enable input. I tried to connect data from the decoder to the enable input, and it doesn't work. After careful reviewing, I found out that this input is only for disable, if the data send is 0, the decoder is enable, vice versa, so I need to put a "NOT" Gate in between the instruction data and the decoder.
 <br><br>My Solution:<br>
 <img width="1204" height="1251" alt="Screenshot 2026-07-14 153144" src="https://github.com/user-attachments/assets/7636df94-c269-46aa-8587-00dcee52d830" />
+### Immediate Value
+Objective:<br>
+          &emsp;&emsp;Directly move the number represent by instruction to reg 0<br><br>
+My Thought Process:
+                <br>&emsp;&emsp;It is still a add-on of the previous circuit. What I need to do is just move the value given by 
+instruction to the register 0. I simply connect the instruction's value to the reg 0. Since there's two condition that will enable the reg 0. I tried to directly connect the decoder's signal to the enable component of reg 0, but it cause the short circuit. To solve this problem, I use an "OR" gate and connect the wire used for "move" mode and wire used for "immediate" mode to the input of the "OR" gate and then connect the output of the "OR" gate to the enable component of reg 0.
+<br><br>My Solution:<br>
+<img width="1279" height="1291" alt="image" src="https://github.com/user-attachments/assets/e832b6db-df74-478d-bf35-691f6bd1b0af" />
+
+          
