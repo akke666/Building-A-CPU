@@ -30,5 +30,15 @@ My Thought Process:
 instruction to the register 0. I simply connect the instruction's value to the reg 0. Since there's two condition that will enable the reg 0. I tried to directly connect the decoder's signal to the enable component of reg 0, but it cause the short circuit. To solve this problem, I use an "OR" gate and connect the wire used for "move" mode and wire used for "immediate" mode to the input of the "OR" gate and then connect the output of the "OR" gate to the enable component of reg 0.
 <br><br>My Solution:<br>
 <img width="1279" height="1291" alt="image" src="https://github.com/user-attachments/assets/e832b6db-df74-478d-bf35-691f6bd1b0af" />
+### Turing Complete
+Objective:<br>
+          &emsp;&emsp;Apply the counter and the overwrite function to build a real computer<br><br>
+My Thuoght Process:
+          <br>&emsp;&emsp;In this level, which is the last level of CPU Architecture, I need to apply the counter and it's overwrite function to the circuit. Before, there was a level named " Condition", the circuit I created was great suitable to accomplish this goal. Here is the "Condition" circuit:
+          <br><img width="1053" height="509" alt="image" src="https://github.com/user-attachments/assets/f019bfa0-056b-41d8-8e02-dbe48906428d" /><br>
+          Since I had already create this function, so I just simply made it to a component so I can apply it into the Turing Complete level. The decision logic was compare the value of reg 3 and the signal from the RAM to determine if overwrite the value of the counter with reg 0. After a reasonable connection, the Turing Complete Computer finished.
+<br><br>My Solution:<br>
+<img width="1470" height="957" alt="Screenshot 2026-07-14 172531" src="https://github.com/user-attachments/assets/5d602a06-6ccd-42d3-af78-1ea27f3aa351" />
+
 
           
