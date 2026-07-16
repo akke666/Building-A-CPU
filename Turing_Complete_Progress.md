@@ -39,6 +39,13 @@ My Thuoght Process:
           Since I had already create this function, so I just simply made it to a component so I can apply it into the Turing Complete level. The decision logic was compare the value of reg 3 and the signal from the RAM to determine if overwrite the value of the counter with reg 0. After a reasonable connection, the Turing Complete Computer finished.
 <br><br>My Solution:<br>
 <img width="1470" height="957" alt="Screenshot 2026-07-14 172531" src="https://github.com/user-attachments/assets/5d602a06-6ccd-42d3-af78-1ea27f3aa351" />
+## PROGRAMMING
+### Punchcard Programming
+Objective:<br>
+          &emsp;&emsp;Add 5 to the input<br><br>
+My Thuoght Process:
+          <br>&emsp;&emsp;This level's goal is really simple, just add 5 to the input value. You need to edit the "Program", giving out the specific instruction to the "Program" to accomplish the goal of adding 5 to the input I apply the binary programming. First I "immediate" 5 into reg 0, and then move the value in reg 0 to the reg 1, because the ALU can only do work on reg 1 and reg 2, the output for ALU can only be stored in reg 3.Then I move the input value into the reg 2, after that, I apply the ALU to add reg 1 and reg 2 together. Finally, move the value stored in reg 3 to the output.<br> This level is really interesting, I spent a lot of time making my CPU and now I can finally command my CPU. 
+<img width="1368" height="990" alt="Screenshot 2026-07-15 191417" src="https://github.com/user-attachments/assets/1ba0b062-0999-4d42-8a06-1a6879cfc505" />
 
 
           
