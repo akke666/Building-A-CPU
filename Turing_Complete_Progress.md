@@ -54,6 +54,16 @@ My Thuoght Process:
           <br>&emsp;&emsp;It is basiclly the same thing as yesterday, the only difference is change the binary programming into assembly programming. The only thing I need to do is using words to decribe the steps.
 <br>My Solution:<br>
 <img width="999" height="297" alt="Screenshot 2026-07-16 201417" src="https://github.com/user-attachments/assets/779a5689-5bf2-47a8-a1a0-ee343d45320e" />
+### Circumference
+Objective:<br>
+          &emsp;&emsp;Use the given radius to cacuiate the circumference. The formula is 2pir, pi can be round to 3 in this case.<br><br>
+My Thuoght Process:
+          <br>&emsp;&emsp;Since the pi is round to 3 in this case, so the easiest way to accomplish multiplication is through its foundamental principal that. adding a value n times is the same thing as time the value by n. Since 2 times 3 is 6, so the goal is simple, I just need to add radius 6 times. Here's how I did that.
+<br>My Solution:<br>
+<img width="329" height="444" alt="Screenshot 2026-07-16 204655" src="https://github.com/user-attachments/assets/5a165fa4-7f2c-440f-9881-5b1e6f472117" />
+<br>&emsp;&emsp; But then I realized the use of r0 can be skipped, because although the value in r1 and r2 have been added up and send to r3, but the value in r1 and r2 remained.
+<br>Here is the code after modified<br>
+<img width="327" height="477" alt="Screenshot 2026-07-16 210216" src="https://github.com/user-attachments/assets/2c868a28-c93f-4e28-bc13-03ab799b0a3d" />
 
 
           
