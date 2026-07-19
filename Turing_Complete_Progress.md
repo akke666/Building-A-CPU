@@ -59,7 +59,26 @@ My Thuoght Process:
 <br>&emsp;&emsp; But then I realized the use of r0 can be skipped, because although the value in r1 and r2 have been added up and send to r3, but the value in r1 and r2 remained.
 <br><details><summary><mark>Here is the code after modified</mark></summary>
 <img width="327" height="477" alt="Screenshot 2026-07-16 210216" src="https://github.com/user-attachments/assets/2c868a28-c93f-4e28-bc13-03ab799b0a3d" /></details>
+### Conditional Jumps
+Objective:<br>
+          &emsp;&emsp;When the input equal to 37, output how many times that read the inputs.<br><br>
+My Thuoght Process:
+          <br>&emsp;&emsp;In this level, the game introduce the Label. Label can be consider a loop, so the logic goes like this.<br>
+count=0<br>
+value=37<br>
+Loop:<br>
+&emsp;&emsp;count+=1<br>
+&emsp;&emsp;if value-input!=0:<br>
+&emsp;&emsp;&emsp;&emsp;Jump loop<br>
+&emsp;&emsp;output count<br>
+Label is very important. It address a Location in the code. It tells where to jump back in code.<br>
+<br><details><summary><mark>Click to see my Solution:</mark></summary>
+<img width="315" height="605" alt="Screenshot 2026-07-18 191452" src="https://github.com/user-attachments/assets/16c7124b-c52a-4b44-abde-c03174a5a3eb" /></details>
 
+
+ 
+
+          
 
           
           
