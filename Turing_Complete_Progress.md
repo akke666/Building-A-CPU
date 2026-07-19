@@ -30,7 +30,7 @@ Objective:<br>
           &emsp;&emsp;Apply the counter and the overwrite function to build a real computer<br><br>
 My Thuoght Process:
           <br>&emsp;&emsp;In this level, which is the last level of CPU Architecture, I need to apply the counter and it's overwrite function to the circuit. Before, there was a level named " Condition", the circuit I created was great suitable to accomplish this goal. Here is the "Condition" circuit:
-          <br><img width="1053" height="509" alt="image" src="https://github.com/user-attachments/assets/f019bfa0-056b-41d8-8e02-dbe48906428d" /><br>
+          <br><details><summary><mark>Click to the "Condition" circuit:</mark></summary><img width="1053" height="509" alt="image" src="https://github.com/user-attachments/assets/f019bfa0-056b-41d8-8e02-dbe48906428d" /></details>
           Since I had already create this function, so I just simply made it to a component so I can apply it into the Turing Complete level. The decision logic was compare the value of reg 3 and the signal from the RAM to determine if overwrite the value of the counter with reg 0. After a reasonable connection, the Turing Complete Computer finished.
 <br><details><summary><mark>Click to see my Solution:</mark></summary>
 <img width="1470" height="957" alt="Screenshot 2026-07-14 172531" src="https://github.com/user-attachments/assets/5d602a06-6ccd-42d3-af78-1ea27f3aa351" /></details>
@@ -68,7 +68,7 @@ count=0<br>
 value=37<br>
 Loop:<br>
 &emsp;&emsp;count+=1<br>
-&emsp;&emsp;if value-input!=0:<br>
+&emsp;&emsp;if value-input!==0:<br>
 &emsp;&emsp;&emsp;&emsp;Jump loop<br>
 &emsp;&emsp;output count<br>
 Label is very important. It address a Location in the code. It tells where to jump back in code.<br>
