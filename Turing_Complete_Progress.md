@@ -74,6 +74,12 @@ Loop:<br>
 Label is very important. It address a Location in the code. It tells where to jump back in code.<br>
 <br><details><summary><mark>Click to see my Solution:</mark></summary>
 <img width="315" height="605" alt="Screenshot 2026-07-18 191452" src="https://github.com/user-attachments/assets/16c7124b-c52a-4b44-abde-c03174a5a3eb" /></details>
+### Code Breaker
+Objective:<br>
+          &emsp;&emsp;Output a sercret code that matches the code in the game to win.<br>
+My Thuoght Process:
+          <br>&emsp;&emsp;The game provides two ways to solve, first way is using binary search, and second way is output every possible values. So I first use the second way.          
+<br><details><summary><mark>Click to see my Solution:</mark></summary><img width="253" height="346" alt="image" src="https://github.com/user-attachments/assets/e34f85e2-1923-4ca2-89d3-b5e677092237" /></details>
 
 
  
