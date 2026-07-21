@@ -79,7 +79,8 @@ Objective:<br>
           &emsp;&emsp;Output a sercret code that matches the code in the game to win.<br>
 My Thuoght Process:
           <br>&emsp;&emsp;The game provides two ways to solve, first way is using binary search, and second way is output every possible values. So I first use the second way.          
-<br><details><summary><mark>Click to see my Solution:</mark></summary><img width="253" height="346" alt="image" src="https://github.com/user-attachments/assets/e34f85e2-1923-4ca2-89d3-b5e677092237" /></details>
+<br><details><summary><mark>Click to see my Solution:</mark></summary><img width="253" height="346" alt="image" src="https://github.com/user-attachments/assets/e34f85e2-1923-4ca2-89d3-b5e677092237" /></details><br>
+I haven't figure out how to implement binary search yet, as soon as I figured it out I will post it here.
 
 
  
