@@ -1,4 +1,4 @@
-# 1-BIT-DECODER
+# MUX2
 ## Function:
 Toggles between 2 values
 ## Code:
