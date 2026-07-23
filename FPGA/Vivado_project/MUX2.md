@@ -53,6 +53,7 @@ endmodule
 ```
 ## RTL Schematic:
 <img width="1484" height="610" alt="image" src="https://github.com/user-attachments/assets/221d385d-1e0e-48ad-9fe7-05f76fabe9a4" />
+
 ## Behavioral Simulation Waveform
 <img width="1093" height="400" alt="image" src="https://github.com/user-attachments/assets/acf517b7-4915-49da-b9e3-964e87e3f13b" />
 
