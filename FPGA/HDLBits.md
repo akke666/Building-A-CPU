@@ -1,3 +1,11 @@
+## About This Project
+This repository contains my personal notes and Verilog solutions for exercises on **HDLBits**. 
+
+### Copyright and Disclaimer
+* **Problem Assets**: All problem descriptions, vector diagrams, and initial module declarations are the intellectual property of [HDLBits (01xz.net)](https://01xz.net).
+* **Solutions**: The Verilog code implementations provided in this repository are written by me for personal learning, academic discussion, and reference purposes only.
+* **Removal Request**: If you are the copyright owner and believe that any content in this repository infringes upon your rights, please open an issue or contact me, and I will remove the relevant material immediately.
+
 # Verilog Language
 ## Basics
 ### Declareing wires
@@ -44,6 +52,26 @@ module top_module (
     assign d=p1f & p1e & p1d;
     assign p1y= c | d;
 
+endmodule
+```
+## Vectors
+### Vector0
+#### Goal:
+<img width="690" height="227" alt="image" src="https://github.com/user-attachments/assets/7ee3c443-504d-4ecf-81cf-14715db9fef8" />
+
+#### Code:
+
+```Verilog
+module top_module ( 
+    input wire [2:0] vec,
+    output wire [2:0] outv,
+    output wire o2,
+    output wire o1,
+    output wire o0  ); // Module body starts after module declaration
+	assign outv=vec;
+    assign o2=vec[2];
+    assign o1=vec[1];
+    assign o0=vec[0];
 endmodule
 ```
 
