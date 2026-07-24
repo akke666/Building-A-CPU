@@ -75,3 +75,24 @@ module top_module (
 endmodule
 ```
 
+### Vectorgates
+#### Goal:
+<img width="829" height="227" alt="image" src="https://github.com/user-attachments/assets/1f53d6e4-3b3d-49f3-8c3a-4430089c7937" />
+
+#### Code:
+
+```Verilog
+module top_module( 
+    input [2:0] a,
+    input [2:0] b,
+    output [2:0] out_or_bitwise,
+    output out_or_logical,
+    output [5:0] out_not
+);
+    assign out_or_bitwise[2:0]=a[2:0] | b[2:0];
+    assign out_or_logical=a || b;
+    assign out_not[2:0]=~a;
+    assign out_not[5:3]=~b;
+endmodule
+```
+
