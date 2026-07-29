@@ -81,6 +81,18 @@ My Thuoght Process:
           <br>&emsp;&emsp;The game provides two ways to solve, first way is using binary search, and second way is output every possible values. So I first use the second way.          
 <br><details><summary><mark>Click to see my Solution:</mark></summary><img width="253" height="346" alt="image" src="https://github.com/user-attachments/assets/e34f85e2-1923-4ca2-89d3-b5e677092237" /></details><br>
 I haven't figure out how to implement binary search yet, as soon as I figured it out I will post it here.
+### Mod 4
+Objective:<br>
+          &emsp;&emsp;Return a value that equal to the input modulo 4. <br>
+My Thuoght Process:
+          <br>&emsp;&emsp;The game requires me to output the value in 8 ticks. First I was thinking about minus 4 until the value smaller than 4, so that value will be the result. But it may takes more than 8 ticks. There must be a smarter way. Then I realize that only the lowest 2 bit determine the result. So thing I should do is only evaluate the lowest 2 bits. But another problem came out: how do I eliminate the higher 6 bits? what I did is use a "AND" logic gate. I store 3 into the reg 1. which is 0000 0011, and then I move the input into reg 2, after i "AND" reg 1 and reg2, the value stored in reg 3 will only left the lower two bits. For example:<br>
+ <br>&emsp;&emsp;reg 1: 0000 0011<br>
+ &emsp;&emsp;&emsp;&emsp;&emsp;AND
+ <br>&emsp;&emsp;reg 2: 1011 0101<br>
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓
+  <br>&emsp;&emsp;reg 3: 0000 0001<br>
+  So the only thing left is to output the value in reg 3.
+<br><details><summary><mark>Click to see my Solution:</mark></summary><img width="264" height="211" alt="Screenshot 2026-07-29 123941" src="https://github.com/user-attachments/assets/01409ed8-07df-44f4-9d1e-a717dd450ca0" /></details><br>
 
 
  
