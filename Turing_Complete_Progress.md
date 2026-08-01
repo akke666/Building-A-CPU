@@ -94,7 +94,46 @@ My Thuoght Process:
   So the only thing left is to output the value in reg 3.
 <br><details><summary><mark>Click to see my Solution:</mark></summary><img width="264" height="211" alt="Screenshot 2026-07-29 123941" src="https://github.com/user-attachments/assets/01409ed8-07df-44f4-9d1e-a717dd450ca0" /></details><br>
 
+### Maze
+Objective:<br>
+          &emsp;&emsp;Move a robot that can move forward, turn left and right, and detect is there any thing in the front to the end of a maze.<br>
+My Thuoght Process:
+          <br>&emsp;&emsp; I like this level. I first try the "Left Hand Rule", which is keep moving forward, if there is a wall, turn left. Then I found out the robot will only move back to back in a particular area. I try to improve my code. I first let the robot turn left, if there is a wall, turn right, if there's not, moving forward. This turn left function solve the problem. Here is the code:<br>
+My solution:
+<br>
+```Assembly Programming
+Restart:
+imm Turn_left
+jmp
 
+Decide:
+mov r3,in
+imm Move_forward
+jz
+imm Turn_right
+jnz
+
+
+Move_forward:
+imm 1
+mov out, r0
+imm Restart
+jmp
+
+Turn_left:
+imm0
+mov out, r0
+imm Decide
+jmp
+
+Turn_right:
+imm 2
+mov out, r0
+imm Decide
+jmp
+```
+
+          
  
 
           
