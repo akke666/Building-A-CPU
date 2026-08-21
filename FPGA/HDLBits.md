@@ -95,4 +95,57 @@ module top_module(
     assign out_not[5:3]=~b;
 endmodule
 ```
+### Gates4
+#### Goal:
+out_and: output of a 4-input AND gate.<br>
+out_or: output of a 4-input OR gate.<br>
+out_xor: output of a 4-input XOR gate.
+#### Code:
+```Verilog
+module top_module( 
+    input [3:0] in,
+    output out_and,
+    output out_or,
+    output out_xor
+    
+);
+    assign out_and= in[1]&in[2]&in[3]&in[0];
+    assign out_or=|in;
+    assign out_xor=^in;
+endmodule
+```
+### Vectorr
+#### Goal:
+Given an 8-bit input vector [7:0], reverse its bit ordering.
+#### Code;
+```Verilog
+module top_module( 
+    input [7:0] in,
+    output reg [7:0] out
+);
+    integer i;
+    always @(*) begin
+        for (i=0;i<8;i=i+1) begin
+            out[i]=in[7-i];
+        end
+    end
+endmodule
+```
+### Vector 5
+#### Goal:
+<img width="399" height="115" alt="image" src="https://github.com/user-attachments/assets/3e19b198-7a00-44ac-abda-645235adafce" />
 
+#### Code:
+
+```Verilog
+module top_module (
+    input a, b, c, d, e,
+    output [24:0] out );//
+    wire [24:0]s;
+    wire [24:0]m;
+    assign s={{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}};
+              assign m={{5{a,b,c,d,e}}};
+              assign out=~s^m
+
+endmodule
+```
