@@ -149,3 +149,39 @@ module top_module (
 
 endmodule
 ```
+### Three modules
+#### Goal:
+<img width="755" height="226" alt="image" src="https://github.com/user-attachments/assets/e1f5075f-6bf8-40a0-8695-4815a8bb2da8" />
+
+#### Code:
+
+```Verilog
+module top_module ( input clk, input d, output q );
+	wire x;
+    wire y;
+    
+    my_dff(.clk(clk), .d(d),.q(x) );
+    my_dff(.clk(clk), .d(x),.q(y) );
+    my_dff(.clk(clk), .d(y),.q(q) );
+endmodule
+```
+### Adder 1
+#### Goal:
+<img width="491" height="304" alt="image" src="https://github.com/user-attachments/assets/ead275d2-8c31-4f0a-b5a3-6871e61a21c1" />
+
+#### Code:
+
+```Verilog
+module top_module(
+    input [31:0] a,
+    input [31:0] b,
+    output [31:0] sum
+);
+    wire inti=0;
+    wire mid;
+    wire [15:0] up,down;
+    add16 ex1(.a(a[15:0]),.b(b[15:0]),.cin(inti), .sum(sum[15:0]),.cout(mid));
+    add16 ex2(.a(a[31:16]),.b(b[31:16]),.cin(mid),.sum(sum[31:16]));
+           
+endmodule
+```
