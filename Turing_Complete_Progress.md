@@ -132,8 +132,17 @@ mov out, r0
 imm Decide
 jmp
 ```
+### Signed Less
+Objective:<br>
+          &emsp;&emsp;Compare two inputs. If the first input is less than the second one, return ture. Otherwise false<br>
+My Thuoght Process:
+          <br>&emsp;&emsp;First I think about directly using ... <br>
+<br><details><summary><mark>Click to see my Solution:</mark></summary>
+<img width="1168" height="1112" alt="Screenshot 2026-09-15 092116" src="https://github.com/user-attachments/assets/54c8a8d4-1be5-43e7-9d04-cf02358ba379" />
+</details>
 
-          
+<br><details><summary><mark>Improved Solution:</mark></summary><img width="1318" height="1244" alt="Screenshot 2026-09-15 092748" src="https://github.com/user-attachments/assets/8d7848ee-b816-4e1c-add7-5e04bfa7a947" /></details>
+
  
 
           
