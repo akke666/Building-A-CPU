@@ -136,11 +136,20 @@ jmp
 Objective:<br>
           &emsp;&emsp;Compare two inputs. If the first input is less than the second one, return ture. Otherwise false<br>
 My Thuoght Process:
-          <br>&emsp;&emsp;First I think about directly using ... <br>
+          <br>&emsp;&emsp;First I think about directly using the "LOW" method to solve this problem. When I run it, a problem happened: the "LOW" method cannot compare the number correctly when one of the input is negative. To solve this problem, I added some logical method to check the state of the 8th bit of each input. When both of the 8th inputs are FALSE, which means both of the inputs are positive, an "LOW" method can be simply apply in this scenario. Then I use the NOT and AND to determine the output when one of the input is negative. Finally, I use an AND to check when both of the inputs are negative.  <br>
 <br><details><summary><mark>Click to see my Solution:</mark></summary>
 <img width="1168" height="1112" alt="Screenshot 2026-09-15 092116" src="https://github.com/user-attachments/assets/54c8a8d4-1be5-43e7-9d04-cf02358ba379" />
 </details>
-
+Inprovements:
+          <br>&emsp;&emsp;After carefully review the process, I found out that I can remove the process that check the state that both of the inputs are negative, because when both of the input are negative, a LOW can be simply apply in this scenario. I remove this process and change the NOR gate used to check whether both input are positive to a XNOR gate, which returns true when the inputs are the same. <br>
+Explanation:<br>
+          <br>When both number are the same sign:
+          <br>&emsp;&emsp;For example: Input A=50, Input B=60, a LOW can be simply applied
+          <br>&emsp;&emsp;Another example:InputA=159(-97), InputB=147(-109) <br>
+          &emsp;&emsp;-159>-147 Low return False&emsp;&emsp;&emsp;&emsp;-97>-109 Low also ruturn False.<br>
+          <br>When two input are different sign:<br>
+          &emsp;&emsp;When Input A has the 8th digit turned on, and Input B not, ruturn Ture<br>
+          &emsp;&emsp;When Input B has the 8th digit turned on, and Input A not, ruturn False<br>
 <br><details><summary><mark>Improved Solution:</mark></summary><img width="1318" height="1244" alt="Screenshot 2026-09-15 092748" src="https://github.com/user-attachments/assets/8d7848ee-b816-4e1c-add7-5e04bfa7a947" /></details>
 
  
