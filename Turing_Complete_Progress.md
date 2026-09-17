@@ -152,6 +152,16 @@ Explanation:<br>
           &emsp;&emsp;When Input B has the 8th digit turned on, and Input A not, ruturn False<br>
 <br><details><summary><mark>Improved Solution:</mark></summary><img width="1318" height="1244" alt="Screenshot 2026-09-15 092748" src="https://github.com/user-attachments/assets/8d7848ee-b816-4e1c-add7-5e04bfa7a947" /></details>
 
+
+### Count Leading Zeroes
+Objective:<br>
+          &emsp;&emsp; Count the number of leading zeros of a byte. For example: 00001010 Here you have 4 leading zeroes.<br>
+My Thuoght Process:
+          <br>&emsp;&emsp;          
+
+
+<br><details><summary><mark>Click to see my Solution:</mark></summary><img width="1614" height="556" alt="image" src="https://github.com/user-attachments/assets/7c18e7c3-0ac7-4a0e-b703-d84fb48c1c18" /></details>
+
  
 
           
